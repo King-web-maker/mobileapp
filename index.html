@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/import.css">
+    <script src="https://kit.fontawesome.com/7545a9d829.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.onepage-scroll.js" id="text/css"></script>
+    <link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
+
+    <title>mobileApp</title>
+    <style>
+    html{
+      height: 100%;
+    }
+    body {
+      background: #E2E4E7;
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans', sans-serif, Arial;
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+        height: 100% !important;
+        height: 100%;
+        margin: 0 auto; 
+        overflow: hidden;
+    }
+    nav{
+      z-index:1000;
+    }
+    
+    </style>
+    <style>
+
+        .hidden {
+          opacity:0;
+        }
+        .console-container {
+         
+          font-family:Khula;
+          font-size:4em;
+          text-align:center;
+          height:200px;
+          width:600px;
+          display:block;
+          position:absolute;
+          color:white;
+          top:0;
+          bottom:0;
+          left:0;
+          right:0;
+          margin:auto;
+        }
+        .console-underscore {
+           display:inline-block;
+          position:relative;
+          top:-0.14em;
+          left:10px;
+        }
+    </style>
+    <script>
+      $(document).ready(function(){
+      $(".pageContainer").onepage_scroll({
+        sectionContainer: "section",     // section 대상설정.
+        easing: "ease",                  // css3 가속도설정. ease-in, ease-out, cubic....
+        animationTime: 1000,             // section간 전환속도
+        pagination: true,                // 우측 pagenation 설정.
+        updateURL: false,                // page 전환시 url 에 #1,2,3 표시.
+        beforeMove: function(index) {},  // 페이지 이동전 함수호출
+        afterMove: function(index) {},   // 페이지 이동후 함수호출
+        loop: true,                     // 페이지 전환 반복여부
+        keyboard: true,                  // 키보드 조종여부 (up : 위, down : 아래, space : 한페이지씩 이동, home : 첫페이지로, end : 마지막페이지)
+        responsiveFallback: 600,        // scroll 플러그인 해제 기준 해상도너비(width). 사용안할시 false.
+        direction: "vertical",            // 동작방향설정 "horizontal" "vertical"
+        touchEnabled: true,
+        responsive: true
+        });
+      });
+      
+    </script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="pageContainer">
+            <header>
+            <div>
+                <label for="mui" class="fa fa-navicon fa-lg"></label>
+                <input type="checkbox" id="mui">
+                <nav>
+                    <ul class="textdeco">
+                        <li class="current"><a href="#" data-hover="heartlink">heartlink</a></li>
+                        <li><a href="#download" data-hover="Download">Download</a></li>
+                        <li><a href="#features" data-hover="Features">Features</a></li>
+                        <li><a href="#contact" data-hover="Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+            <section class="page1">
+                <div class="container">                    
+                    <div>
+                        <!-- <img src="images/iphone_6_plus_white_port.png" alt="phone"> -->
+                        <img  class="fadeIn" src="images/iphoneapp1.png" alt="app1">
+                    </div>
+
+                    <div class="title-container">
+                        <h1>Lorem ipsum dolor sit consectetur adipiscing do eiusmod tempor ut labore et dolore</h1>
+                        <a href="#download" class="btn-outline">Start Now for Free!</a>
+                    </div>
+                </div>
+            </section>
+            <section class="page2">
+                <div>
+                    <div>
+                        <h2>Lorem Ipsum dolor sit <br>amet, consectetur</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                    </div>
+                    <div>
+                        <a href="">
+                            <img src="images/google-play-badge.svg" alt="google">
+                        </a>
+                        <a href="">
+                            <img src="images/app-store-badge.svg" alt="apple">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="page3">
+                <div>
+                    <div>
+                        <h2>Lorem Ipsum dolor</h2>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+                        <hr>
+                    </div>
+                    <div>
+                        <!-- <img src="images/iphone_6_plus_white_port.png" alt="iphone"> -->
+                        <img src="images/iphoneapp2.png" alt="app2">
+                    </div>
+                    <div>
+                        <img src="images/appcamera.png" alt="cam">
+                        <h3>Flexible Use</h3>
+                        <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem</p>
+                    </div>
+                    <div>
+                        <img src="images/appphone.png" alt="phone">
+                        <h3>Device Use</h3>
+                        <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem</p>
+                    </div>
+                    <div>
+                        <img src="images/appunlock.png" alt="unlock">
+                        <h3>Open Source</h3>
+                        <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem</p>
+                    </div>
+                    <div>
+                        <img src="images/appgift.png" alt="gift">
+                        <h3>Free to Use</h3>
+                        <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem</p>
+                    </div>
+                </div>
+            </section>
+            <section class="page4">
+                <img src="images/bg-cta.jpg" alt="man" width="1920" height="1080">
+                <div>
+                    <h2>Lorem Ipsum<br>dolor<br>sit amet,<br>consectetur</h2>
+                    <a href="#" class="btn-outline">Let's Get Started!</a>
+                </div>
+
+            </section>
+            <section class="page5">
+                <div class="sns">
+                    <h2>We <i class="fa fa-heart" style="color: red"></i> are New Friends!</h2>
+                    <ul>
+                        <li class="twitter">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li class="facebook">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="google">
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <footer>
+                    <div class="footerpage">
+                        <p>Copyright &copy; All Rights Reserved</p>
+                        <ul>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
