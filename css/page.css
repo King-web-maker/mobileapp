@@ -4,290 +4,7 @@
 *::after {
 	box-sizing: border-box;
 }
-.fadeIn{
-	animation-name: fadeIn;
-	-webkit-animation-name: fadeIn;	
 
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
-
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-	visibility: visible !important;	
-}
-
-@keyframes fadeIn {
-	0% {
-		transform: scale(0);
-		opacity: 0.0;		
-	}
-	60% {
-		transform: scale(1.1);	
-	}
-	80% {
-		transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-		transform: scale(1);
-		opacity: 1;	
-	}		
-}
-
-@-webkit-keyframes fadeIn {
-	0% {
-		-webkit-transform: scale(0);
-		opacity: 0.0;		
-	}
-	60% {
-		-webkit-transform: scale(1.1);
-	}
-	80% {
-		-webkit-transform: scale(0.9);
-		opacity: 1;	
-	}	
-	100% {
-		-webkit-transform: scale(1);
-		opacity: 1;	
-	}		
-}
-
-
-.slideLeft{
-    animation-name: slideLeft;
-    -webkit-animation-name: slideLeft;	
-
-    animation-duration: 2s;	
-    -webkit-animation-duration: 2s;
-
-    animation-timing-function: ease-in-out;	
-    -webkit-animation-timing-function: ease-in-out;		
-
-    visibility: visible !important;	
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translateX(150%);
-    }
-    50%{
-        transform: translateX(-8%);
-    }
-    65%{
-        transform: translateX(4%);
-    }
-    80%{
-        transform: translateX(-4%);
-    }
-    95%{
-        transform: translateX(2%);
-    }			
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@-webkit-keyframes slideLeft {
-    0% {
-        -webkit-transform: translateX(150%);
-    }
-    50%{
-        -webkit-transform: translateX(-8%);
-    }
-    65%{
-        -webkit-transform: translateX(4%);
-    }
-    80%{
-        -webkit-transform: translateX(-4%);
-    }
-    95%{
-        -webkit-transform: translateX(2%);
-    }			
-    100% {
-        -webkit-transform: translateX(0%);
-    }
-}
-
-.slideRight{
-	animation-name: slideRight;
-	-webkit-animation-name: slideRight;	
-
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
-
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-	visibility: visible !important;	
-}
-
-@keyframes slideRight {
-	0% {
-		transform: translateX(-150%);
-	}
-	50%{
-		transform: translateX(8%);
-	}
-	65%{
-		transform: translateX(-4%);
-	}
-	80%{
-		transform: translateX(4%);
-	}
-	95%{
-		transform: translateX(-2%);
-	}			
-	100% {
-		transform: translateX(0%);
-	}	
-}
-
-@-webkit-keyframes slideRight {
-	0% {
-		-webkit-transform: translateX(-150%);
-	}
-	50%{
-		-webkit-transform: translateX(8%);
-	}
-	65%{
-		-webkit-transform: translateX(-4%);
-	}
-	80%{
-		-webkit-transform: translateX(4%);
-	}
-	95%{
-		-webkit-transform: translateX(-2%);
-	}			
-	100% {
-		-webkit-transform: translateX(0%);
-	}
-}
-
-.stretchRight{
-	animation-name: stretchRight;
-	-webkit-animation-name: stretchRight;	
-
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
-
-	animation-timing-function: ease-out;	
-	-webkit-animation-timing-function: ease-out;	
-
-	transform-origin: 0% 0%;
-	-ms-transform-origin: 0% 0%;
-	-webkit-transform-origin: 0% 0%; 		
-}
-
-@keyframes stretchRight {
-	0% {
-		transform: scaleX(0.3);
-	}
-	40% {
-		transform: scaleX(1.02);
-	}
-	60% {
-		transform: scaleX(0.98);
-	}
-	80% {
-		transform: scaleX(1.01);
-	}
-	100% {
-		transform: scaleX(0.98);
-	}				
-	80% {
-		transform: scaleX(1.01);
-	}
-	100% {
-		transform: scaleX(1);
-	}							
-}
-
-@-webkit-keyframes stretchRight {
-	0% {
-		-webkit-transform: scaleX(0.3);
-	}
-	40% {
-		-webkit-transform: scaleX(1.02);
-	}
-	60% {
-		-webkit-transform: scaleX(0.98);
-	}
-	80% {
-		-webkit-transform: scaleX(1.01);
-	}
-	100% {
-		-webkit-transform: scaleX(0.98);
-	}				
-	80% {
-		-webkit-transform: scaleX(1.01);
-	}
-	100% {
-		-webkit-transform: scaleX(1);
-	}		
-}
-.stretchLeft{
-	animation-name: stretchLeft;
-	-webkit-animation-name: stretchLeft;	
-
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
-
-	animation-timing-function: ease-out;	
-	-webkit-animation-timing-function: ease-out;	
-
-	transform-origin: 100% 0%;
-	-ms-transform-origin: 100% 0%;
-	-webkit-transform-origin: 100% 0%; 
-}
-
-@keyframes stretchLeft {
-	0% {
-		transform: scaleX(0.3);
-	}
-	40% {
-		transform: scaleX(1.02);
-	}
-	60% {
-		transform: scaleX(0.98);
-	}
-	80% {
-		transform: scaleX(1.01);
-	}
-	100% {
-		transform: scaleX(0.98);
-	}				
-	80% {
-		transform: scaleX(1.01);
-	}
-	100% {
-		transform: scaleX(1);
-	}							
-}
-
-@-webkit-keyframes stretchLeft {
-	0% {
-		-webkit-transform: scaleX(0.3);
-	}
-	40% {
-		-webkit-transform: scaleX(1.02);
-	}
-	60% {
-		-webkit-transform: scaleX(0.98);
-	}
-	80% {
-		-webkit-transform: scaleX(1.01);
-	}
-	100% {
-		-webkit-transform: scaleX(0.98);
-	}				
-	80% {
-		-webkit-transform: scaleX(1.01);
-	}
-	100% {
-		-webkit-transform: scaleX(1);
-	}		
-}
 
 
 
@@ -384,12 +101,11 @@
         transition: all .35s;
     }
 
-    .btn-outline.active, .btn-outline:active, .btn-outline:focus, .btn-outline:hover {
+    section.page1 a.active, section.page1 a:active, section.page1 a:focus, section.page1 a:hover {
         color:#fff;
         background-color:#fdcc52;
         border-color:#fdcc52
-        }
-
+    }
 
     /* section . page1 fin */
 
@@ -496,6 +212,22 @@
     section.page3 div:nth-of-type(6){
         top: 73%;
     }
+    section.page3.active img{
+        animation-name: slideLeft;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    section.page3.active p{
+        animation-name: slideRight;
+        animation-duration: 1.5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
 
     /* section . page3 fin */
     section.page4{
@@ -531,6 +263,44 @@
         text-transform: uppercase;
         text-decoration: none;
         transition: all .35s;
+    }
+    section.page4 a.active, section.page4 a:active, section.page4 a:focus, section.page4 a:hover {
+        color:#fff;
+        background-color:#fdcc52;
+        border-color:#fdcc52
+        }
+
+    section.page4.active h2.one{
+        animation-name: stretchRight;
+        animation-duration: 1.5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    section.page4.active h2.two{
+        animation-name: stretchLeft;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    section.page4.active h2.three{
+        animation-name: stretchRight;
+        animation-duration: 3.5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    section.page4.active h2.four{
+        animation-name: stretchLeft;
+        animation-duration: 4.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
     }
 
     /* section .page4 fin */
@@ -740,7 +510,7 @@
         transition: all .35s;
     }
 
-    .btn-outline.active, .btn-outline:active, .btn-outline:focus, .btn-outline:hover {
+    section.page1 a.active, section.page1 a:active, section.page1 a:focus, section.page1 a:hover {
         color:#fff;
         background-color:#fdcc52;
         border-color:#fdcc52
@@ -847,6 +617,22 @@
         top: 80%;
         left: 10%;
     }
+    section.page3.active img{
+        animation-name: slideLeft;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    section.page3.active p{
+        animation-name: slideRight;
+        animation-duration: 1.5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
 
     /* section . page3 fin */
     section.page4{
@@ -883,6 +669,45 @@
         text-decoration: none;
         transition: all .35s;
     }
+    section.page4 a.active, section.page4 a:active, section.page4 a:focus, section.page4 a:hover {
+        color:#fff;
+        background-color:#fdcc52;
+        border-color:#fdcc52
+        }
+
+    section.page4.active h2.one{
+        animation-name: stretchRight;
+        animation-duration: 1.5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    section.page4.active h2.two{
+        animation-name: stretchLeft;
+        animation-duration: 2.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    section.page4.active h2.three{
+        animation-name: stretchRight;
+        animation-duration: 3.5s;
+        animation-fill-mode: backwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+    section.page4.active h2.four{
+        animation-name: stretchLeft;
+        animation-duration: 4.5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+    }
+
 
     /* section .page4 fin */
 
