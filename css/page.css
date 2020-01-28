@@ -232,10 +232,17 @@
     /* section . page3 fin */
     section.page4{
         position: relative;
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+        background: url(../images/bg-pattern.png), linear-gradient(to right, #d6dd56, #f56fc0);
+        color: #fff;
+
     }
     section.page4 img{
-        filter: brightness(40%);
-        width: 100%;
+        /* filter: brightness(40%);
+        width: 100%; */
+        display: none;
     }
     section.page4 div{
         position: absolute;
@@ -248,7 +255,7 @@
     }
     section.page4 h2{
         font-size: 2.5em;
-        margin-bottom: 15%;
+        margin-bottom: 8%;
     }
     section.page4 a{
         box-sizing: border-box;
